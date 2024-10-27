@@ -2,19 +2,22 @@
   "name": "tally-data-fetch",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
+  "bin": "index.mjs",
   "license": "MIT",
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "scripts": "index.cjs",
+    "assets": [
+      "./utility.js"
+    ]
+  },
   "dependencies": {
     "express": "^4.21.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
-    "path": "^0.12.7",
     "yaml": "^2.6.0"
-  },
-  "scripts": {
-    "dev": "nodemon index.js"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
   }
 }

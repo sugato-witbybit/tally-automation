@@ -11,11 +11,13 @@
     ],
     "scripts": "index.cjs",
     "assets": [
-      "./utility.js"
+      "./utility.js",
+      "./config.json",
+      "./data.json",
+      "./tally-export-config.yaml"
     ]
   },
   "dependencies": {
-    "express": "^4.21.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "yaml": "^2.6.0"
